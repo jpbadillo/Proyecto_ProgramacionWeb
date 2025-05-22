@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FrutTech - Productos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="titulo-cuadro"><b>Lista de Productos</b></div>
+
+  <div class="agregar-producto">
+    <button onclick="mostrarFormulario()">➕ Agregar Producto</button>
+  </div>
+
+  <div class="productos-lista">
+    <!-- Las tarjetas de producto se generan por JS -->
+  </div>
+
+  <!-- Formulario emergente -->
+  <div id="formulario-producto" class="modal oculto">
+    <div class="modal-contenido">
+      <h2>Agregar Producto</h2>
+      <input type="text" id="nuevo-nombre" placeholder="Nombre del producto" />
+      <input type="number" id="nuevo-precio" placeholder="Precio" step="0.01" />
+      <input type="text" id="nueva-imagen" placeholder="URL de la imagen" />
+      <div class="modal-botones">
+        <button onclick="agregarNuevoProducto()">Guardar</button>
+        <button onclick="cerrarFormulario()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    const productos = JSON.parse(localStorage.getItem("productos")) || obtenerProductosIniciales();
+    const lista = document.querySelector(".productos-lista");
+
+    productos.forEach((prod, i) => agregarTarjeta(prod, i));
+  </script>
+</body>
+</html>
+
+
+

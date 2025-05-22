@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menú - FrutTech</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="menu-container">
+    <div class="titulo-cuadro"><b>FRUTECH</b></div>
+
+    <div class="menu-grid">
+      <div class="menu-card" onclick="irALogin('login.html')">
+        <i class="fas fa-sign-in-alt icono-grande"></i>
+        <span>Iniciar Sesión</span>
+      </div>
+      <div class="menu-card" onclick="irARegistro('registro.html')">
+        <i class="fas fa-pen icono-grande"></i>
+        <span>Registrarse</span>
+      </div>
+      <div class="menu-card" onclick="irAProductos('productos.html')">
+        <i class="fas fa-mug-hot icono-grande"></i>
+        <span>Productos</span>
+      </div>
+      <div class="menu-card" onclick="irACarrito('carrito.html')">
+        <i class="fas fa-shopping-cart icono-grande"></i>
+        <span>Carrito</span>
+      </div>
+      <div class="menu-card" onclick="irAHistorial('historial.html')">
+        <i class="fas fa-list icono-grande"></i>
+        <span>Historial</span>
+      </div>
+    </div>
+
+    <button class="menu-btn salir" onclick="volverAlInicio()">Cerrar Menú</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+

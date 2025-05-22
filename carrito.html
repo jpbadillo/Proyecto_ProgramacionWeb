@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carrito de Compras - FrutTech</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="titulo-cuadro"><b>Carrito de Compras</b></div>
+
+  <div class="carrito-lista" id="carrito-contenido"></div>
+
+  <div class="carrito-total" id="total"></div>
+
+  <div class="carrito-acciones">
+<button class="btn-comprar" onclick="window.location.href='pago.html'">Realizar Pago</button>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    mostrarCarrito(); // Llama a la función al cargar
+  </script>
+</body>
+</html>
