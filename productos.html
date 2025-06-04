@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <title>FrutTech - Productos</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Styles/productos.css" />
 </head>
 <body>
 
-  <div class="titulo-cuadro"><b>Lista de Productos</b></div>
+  <div class="titulo-cuadro">Lista de Productos</div>
 
   <div class="agregar-producto">
     <button onclick="mostrarFormulario()">➕ Agregar Producto</button>
   </div>
 
   <div class="productos-lista">
-    <!-- Las tarjetas de producto se generan por JS -->
+    
   </div>
 
   <!-- Formulario emergente -->
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <script src="main.js"></script>
+  <script src="JavaScript/productos.js"></script>
   <script>
     const productos = JSON.parse(localStorage.getItem("productos")) || obtenerProductosIniciales();
     const lista = document.querySelector(".productos-lista");

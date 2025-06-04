@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;        /* Permite que el fondo siempre llegue al final */
+  height: auto; 
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #fcfcfc, #a5d6a7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo-cuadro {
+  border: 4px solid #4CAF50;
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 60px;
+  color: #000000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 40px auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.btn-comprar {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background-color: #388E3C;
+}
